@@ -15,6 +15,7 @@
     gap: 1rem;
     row-gap: 1.5rem;
     max-height: max-content;
+    padding: .8rem;
 }
 .music-mixes-container .music-mixes-heading{
     display: grid;
@@ -37,17 +38,14 @@
 .music-mixes-song-cards{
     display: grid;
     grid-area: main;
+    line-height: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
 }
 
 /*----STYLING MUSIC MIXES SONG CARDS-----*/
 
-.music-mixes-container .music-mixes-song-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-    padding: .5rem;
-    /* grid-template-rows: 1fr; */
-}
+
 /* .card-container:hover .card-text{
     color: orange;
 } */
@@ -64,7 +62,9 @@
 
 
 
-
+.music-mixes-song-cards .card-container{
+    margin-top: 1rem;
+}
 .music-mixes-song-cards .card-container > a{
     color: black;
     text-decoration: none;
@@ -77,7 +77,7 @@
     font-size: 1.2rem;
 }
 .music-mixes-song-cards .card-container .card-text p{
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: #383838;
 }
 

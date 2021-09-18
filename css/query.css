@@ -1,0 +1,42 @@
+@media(min-width:768px){
+    .music-mixes-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr max-content;
+        grid-template-areas: "head footer"
+                             "main main";
+        gap: 1rem;
+        row-gap: 1.5rem;
+        max-height: max-content;
+    }
+    .music-mixes-container > .view-all{
+        border: none;
+        padding: 0;
+        justify-items: end;
+    }
+
+    /*-----SONG CARD-----*/
+    .music-mixes-song-cards{
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .music-mixes-song-cards .card-container .card-text p{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+@media(min-width:1024px){
+    .music-mixes-container{
+        padding: 1rem;
+    }
+    .music-mixes-song-cards{
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
