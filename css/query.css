@@ -20,6 +20,7 @@
         display: grid;
         grid-area: main;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
     }
 
     .music-mixes-song-cards .card-container .card-text p{
@@ -38,5 +39,6 @@
         display: grid;
         grid-area: main;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
     }
 }
