@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /*-----MUSIC MIXES-----*/
 .music-mixes-container{
     display: grid;
@@ -12,7 +15,7 @@
     grid-template-areas: "head"
                          "main"
                          "footer";
-    gap: 1rem;
+    gap: rem;
     /* row-gap: 1.5rem; */
     max-height: max-content;
     padding: .8rem;
@@ -30,6 +33,10 @@
     border-bottom: 1px solid gray;
     padding: 1rem 0;
 }
+.music-mixes-container > .view-all a > i{
+    margin-left: .3rem;
+    color: #6E4DAB;
+}
 .music-mixes-container > .view-all a{
     text-decoration: none;
     font-weight: bold;
@@ -46,6 +53,9 @@
 /*----STYLING MUSIC MIXES SONG CARDS-----*/
 
 
+.music-mixes-song-cards{
+    margin-top: .5rem;
+}
 .card-container:hover .card-text{
     color: #6E4DAB;
 }
@@ -84,10 +94,6 @@
 }
 
 
-
-.music-mixes-song-cards .card-container{
-    margin-top: 1rem;
-}
 .music-mixes-song-cards .card-container > a{
     color: black;
     text-decoration: none;
@@ -97,10 +103,10 @@
     margin-top: 1rem;
 }
 .music-mixes-song-cards .card-container .card-text h4{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .music-mixes-song-cards .card-container .card-text p{
-    font-size: .9rem;
+    font-size: .7rem;
     color: #383838;
 }
 

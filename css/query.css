@@ -13,7 +13,9 @@
         border: none;
         padding: 0;
         justify-items: end;
+        align-items: end;
     }
+    
 
     /*-----SONG CARD-----*/
     .music-mixes-song-cards{
@@ -21,6 +23,10 @@
         grid-area: main;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+        margin-top: unset;
+    }
+    .card-container .card-text{
+        line-height: 1.7rem;
     }
 
     .music-mixes-song-cards .card-container .card-text p{
