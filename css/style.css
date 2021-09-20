@@ -15,8 +15,8 @@ body{
     grid-template-areas: "head"
                          "main"
                          "footer";
-    gap: 1.5rem;
-    row-gap: 1.5rem;
+    /* gap: 1.5rem; */
+    /* row-gap: 1.5rem; */
     max-height: max-content;
     /* padding: .8rem; */
 }
@@ -33,6 +33,7 @@ body{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 1rem 0;
+    margin-top: 2rem;
 }
 .music-mixes-container > .view-all a > i{
     margin-left: .3rem;
@@ -119,8 +120,8 @@ body{
 
 
 /*-----MATCH YOUR MOOD-----*/
-.match-your-mood-container{
-    margin-bottom: 2rem;
+.match-your-mood-container, .music-categories-container{
+    margin: 2rem 0;
 }
 .match-your-mood-heading, .music-categories-heading{
     padding: .8rem;
