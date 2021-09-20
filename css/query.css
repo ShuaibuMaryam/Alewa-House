@@ -12,6 +12,7 @@
     .music-mixes-container > .view-all{
         border: none;
         padding: 0;
+        padding-right: .8rem;
         justify-items: end;
         align-items: end;
     }
@@ -38,7 +39,7 @@
 
 
 @media(min-width:1024px){
-    .music-mixes-container{
+    .music-mixes-container, .match-your-mood-container, .music-categories-container{
         padding: 1rem;
     }
     .music-mixes-song-cards{

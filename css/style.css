@@ -15,14 +15,15 @@ body{
     grid-template-areas: "head"
                          "main"
                          "footer";
-    gap: rem;
-    /* row-gap: 1.5rem; */
+    gap: 1.5rem;
+    row-gap: 1.5rem;
     max-height: max-content;
-    padding: .8rem;
+    /* padding: .8rem; */
 }
 .music-mixes-container .music-mixes-heading{
     display: grid;
     grid-area: head;
+    padding: 0 .8rem;
 }
 .music-mixes-container > .view-all{
     display: grid;
@@ -55,26 +56,27 @@ body{
 
 .music-mixes-song-cards{
     margin-top: .5rem;
+    padding: 0 .8rem;
 }
 .card-container:hover .card-text{
     color: #6E4DAB;
 }
-.card-container .card-image {
-    height: 150px;
+.card-image {
+    height: 170px;
     position: relative;
 }
-.card-container .card-image > img{
+.card-image > img{
     width: 100%;
     height: 100%;
 }
-.card-container .overlay{
+.overlay{
     display: flex;
     justify-content: center;
     align-items: center;
     width: inherit;
     height: inherit;
     background: rgba(0, 0, 0, 0.85);
-    transition: 0.3s ease-out;
+    transition: 0.5s ease-out;
     position: absolute;
     top: 0;
     left: 0;
@@ -92,6 +94,10 @@ body{
 .card-container .card-footer{
     margin-top: .8rem;
 }
+.card-container .card-footer > span{
+    color: #6E4DAB;
+    font-weight: bold;
+}
 
 
 .music-mixes-song-cards .card-container > a{
@@ -106,7 +112,35 @@ body{
     font-size: 1.1rem;
 }
 .music-mixes-song-cards .card-container .card-text p{
-    font-size: .7rem;
+    font-size: .8rem;
     color: #383838;
 }
 
+
+
+/*-----MATCH YOUR MOOD-----*/
+.match-your-mood-container{
+    margin-bottom: 2rem;
+}
+.match-your-mood-heading, .music-categories-heading{
+    padding: .8rem;
+}
+.match-your-mood-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    color: white;
+    line-height: 1.5rem;
+}
+.match-your-mood-card .overlay{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.match-your-mood-card:hover .overlay{
+    background: rgba(0, 0, 0, 0.85);
+}
+.match-your-mood-card:hover .overlay > h3{
+    color: #6E4DAB;
+}
