@@ -30,8 +30,8 @@ body{
     grid-area: footer;
     justify-items: center;
     align-items: center;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 1rem 0;
     margin-top: 2rem;
 }
