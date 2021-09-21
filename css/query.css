@@ -2,7 +2,7 @@
     .music-mixes-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr max-content;
+        /* grid-template-rows: 1fr max-content; */
         grid-template-areas: "head footer"
                              "main main";
         gap: 1rem;

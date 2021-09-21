@@ -55,6 +55,9 @@ body{
 /*----STYLING MUSIC MIXES SONG CARDS-----*/
 
 
+.card-container{
+    width: 100%;
+}
 .music-mixes-song-cards{
     margin-top: .5rem;
     padding: 0 .8rem;
@@ -70,7 +73,7 @@ body{
     width: 100%;
     height: 100%;
 }
-.overlay{
+.card-overlay{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,10 +88,10 @@ body{
     bottom: 0;
     opacity: 0;
 }
-.card-container:hover .overlay{
+.card-container:hover .card-overlay{
     opacity: 1;
 }
-.card-container:hover .overlay > i{
+.card-container:hover .card-overlay > i{
     font-size: 1.8rem;
     color: white;
 }
@@ -108,6 +111,14 @@ body{
 }
 .music-mixes-song-cards .card-container .card-text{
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+.truncate{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .music-mixes-song-cards .card-container .card-text h4{
     font-size: 1.1rem;
@@ -135,13 +146,13 @@ body{
     color: white;
     line-height: 1.5rem;
 }
-.match-your-mood-card .overlay{
+.match-your-mood-card .card-overlay{
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
 }
-.match-your-mood-card:hover .overlay{
+.match-your-mood-card:hover .card-overlay{
     background: rgba(0, 0, 0, 0.85);
 }
-.match-your-mood-card:hover .overlay > h3{
+.match-your-mood-card:hover .card-overlay > h3{
     color: #6E4DAB;
 }
