@@ -170,11 +170,11 @@ body {
 
 /*-----Video section-----*/
 .video-page-right-container{
-  width: 500%;
+  width: 100%;
 }
 .video-cards-wrapper{
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr 1fr;
   gap: .5rem;
 }
 .video-cards-wrapper > a{
