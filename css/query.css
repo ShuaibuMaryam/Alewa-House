@@ -18,6 +18,14 @@
         margin: 0;
     }
     
+    .video-page-right-container{
+        width: 100%;
+      }
+      .video-cards-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5rem;
+      }
 
     /*-----SONG CARD-----*/
     .music-mixes-song-cards{
@@ -49,4 +57,15 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 1rem;
     }
+
+
+
+    .video-page-right-container{
+        width: 50%;
+      }
+      .video-cards-wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: .5rem;
+      }
 }
