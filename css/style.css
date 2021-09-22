@@ -174,7 +174,7 @@ body {
 }
 .video-cards-wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100%;
   gap: .5rem;
 }
 .video-card{
