@@ -222,11 +222,6 @@ main{
 .video-cards-wrapper > a{
   text-decoration: none;
 }
-.video-card{
-  /* display: grid;
-  grid-template-rows: 1fr max-content;
-  row-gap: 1rem; */
-}
 .video-image{
   height: 170px;
   width: 100%;

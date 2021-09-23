@@ -60,9 +60,7 @@
 
 
 
-    .video-page-right-container{
-        /* width: 50%; */
-      }
+    
       .video-cards-wrapper{
         display: grid;
         grid-template-columns: 100%;
