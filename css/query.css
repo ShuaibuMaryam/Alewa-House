@@ -1,8 +1,8 @@
 @media(min-width:768px){
+    
     .music-mixes-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr max-content; */
         grid-template-areas: "head footer"
                              "main main";
         gap: 1rem;
@@ -18,14 +18,6 @@
         margin: 0;
     }
     
-    .video-page-right-container{
-        width: 100%;
-      }
-      .video-cards-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .5rem;
-      }
 
     /*-----SONG CARD-----*/
     .music-mixes-song-cards{
@@ -42,12 +34,20 @@
     .music-mixes-song-cards .card-container .card-text p{
         font-size: 1rem;
     }
+
+
+
+
+    
 }
 
 
 
 
 @media(min-width:1024px){
+    #nav-bar{
+        display: block;
+    }
     .music-mixes-container, .match-your-mood-container, .music-categories-container{
         padding: 1rem;
     }
@@ -61,7 +61,7 @@
 
 
     .video-page-right-container{
-        width: 50%;
+        /* width: 50%; */
       }
       .video-cards-wrapper{
         display: grid;

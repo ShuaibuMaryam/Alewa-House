@@ -7,6 +7,48 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+/*-----Navigation bar-----*/
+#nav-bar{
+  display: none;
+  position:fixed;
+  min-width: 14%;
+  width: 15%;
+  top:0px;
+  left: 0px;
+  height: 100%;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  border-right: 1px solid #ccc;
+  border-color:rgba(0, 22, 22, 0.4);
+}
+nav ul{
+  list-style-type: none;
+}
+.logo > img{
+  width: 100px;
+  height: 70px;
+  margin-top: 1.5rem;
+}
+#nav-bar .nav-items{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.nav-items li a{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+main{
+  position: absolute;
+  margin-bottom: 110px;
+  left: 15%;
+}
+
 /*-----MUSIC MIXES-----*/
 .music-mixes-container {
   display: grid;
@@ -36,14 +78,14 @@ body {
   padding: 1rem 0;
   margin-top: 2rem;
 }
-.music-mixes-container > .view-all a > i {
-  margin-left: 0.3rem;
-  color: #6e4dab;
-}
 .music-mixes-container > .view-all a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #6e4dab; 
+}
+.music-mixes-container > .view-all a > i {
+  margin-left: 0.3rem;
+  color: #6e4dab;
 }
 .music-mixes-song-cards {
   display: grid;
@@ -194,8 +236,8 @@ body {
   height: 100%;
 }
 .video-image-decsription{
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50px auto;
   margin-top: .5rem;
   text-decoration: none;
 }
