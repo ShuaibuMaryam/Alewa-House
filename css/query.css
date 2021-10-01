@@ -34,6 +34,9 @@
     .music-mixes-song-cards .card-container .card-text p{
         font-size: 1rem;
     }
+    .music-mixes-song-cards .card-container .card-text{
+        gap: 1rem;
+    }
 
 
 
@@ -48,7 +51,7 @@
     #nav-bar{
         display: block;
     }
-    .music-mixes-container, .match-your-mood-container, .music-categories-container{
+    .music-mixes-container, .match-your-mood-container, .music-categories-container, .video-section{
         padding: 1rem;
     }
     .music-mixes-song-cards{
@@ -58,12 +61,21 @@
         gap: 1rem;
     }
 
+    .music-mixes-song-cards .card-container .card-text{
+        gap: 1rem;
+    }
 
-
-    
+        
       .video-cards-wrapper{
         display: grid;
         grid-template-columns: 100%;
         gap: .5rem;
+      }
+
+
+
+      .video-section-wrapper{
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 1rem;
       }
 }
