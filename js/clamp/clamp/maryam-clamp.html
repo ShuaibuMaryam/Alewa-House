@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clamping</title>
+
+  <style>
+    p {
+      width: 250px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptates quas, soluta, dolores voluptatum porro incidunt minus? Eaque impedit, at.</p>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptates quas, soluta, dolores voluptatum porro incidunt minus? Eaque impedit, at.</p>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptates quas, soluta, dolores voluptatum porro incidunt minus? Eaque impedit, at.</p>
+  </div>
+
+  <!-- scripts -->
+  <script src="./clamp.js"></script>
+  <script>
+    const singleText = document.querySelector("p") //Affecting single element
+    
+    $clamp(singleText, {clamp: 3});
+    
+    // Affecting multiple elements
+    /* const allParagraphs = document.querySelectorAll("p")
+
+    allParagraphs.forEach((node)=>{
+      $clamp(node, {clamp: 3});
+    }) */
+  </script>
+</body>
+</html>

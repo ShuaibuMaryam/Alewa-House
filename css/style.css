@@ -183,9 +183,9 @@ main{
   gap: 2rem;
 }
 .truncate {
-  /* white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
 }
 #clamp-2 {
   white-space: nowrap;
@@ -311,5 +311,36 @@ main{
 }
 .stories-card-text p{
   /* line-height: initial; */
-  height: 3rem;
+  min-height: 3rem;
+}
+
+
+
+/*-----Listen Live-----*/
+.listen-live-container{
+  padding: .8rem;
+}
+.listen-live-items-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.listen-live-image{
+  width: 100%;
+  height: auto;
+}
+.listen-live-image > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #6e4dab;
+}
+.listen-live-text{
+  text-align: center;
+}
+.listen-live-text > h4{
+  margin: .2rem 0;
+}
+.listen-live-text > span{
+  font-size: .85rem;
 }
