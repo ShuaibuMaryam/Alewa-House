@@ -1,5 +1,12 @@
 @media(min-width:768px){
-    
+    .vjs-logo-content{
+        width: 100px;
+    }
+    .vjs-logo-content > img{
+        width: 100%;
+    }
+
+
     .music-mixes-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -83,6 +90,11 @@
           grid-template-columns: 1fr 1fr 1fr 1fr;
           gap: 1rem;
       }
+      .video-section-wrapper-three{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        }
+
 
 
       /*-----Listen live-----*/

@@ -9,6 +9,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.vjs-logo-content{
+  width: 100px;
+}
+.vjs-logo-content > img{
+  width: 100%;
+}  
+
+
 /*-----Navigation bar-----*/
 #nav-bar{
   font-family: 'Roboto', sans-serif;
