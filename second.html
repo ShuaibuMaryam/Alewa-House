@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/query.css">
 </head>
@@ -323,15 +326,15 @@
 
 
     <!-------Listen live------->
-    <section class="listen-live-container">
-      <div class="listen-live-items-wrapper">
+    <section class="listen-live-container  ">
+      <div class="listen-live-items-wrapper slider">
         <div class="listen-live-item">
           <div class="listen-live-image">
             <img src="./images/image-1.jpg" alt="">
           </div>
           <div class="listen-live-text">
             <h4>Heading</h4>
-            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <span>Lorem ipsum dolor sit amet consectetur first.</span>
           </div>
         </div>
         <div class="listen-live-item">
@@ -379,7 +382,99 @@
             <span>Lorem ipsum dolor sit amet consectetur.</span>
           </div>
         </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+          </div>
+        </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur last.</span>
+          </div>
+        </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur last.</span>
+          </div>
+        </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur last.</span>
+          </div>
+        </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur last.</span>
+          </div>
+        </div>
+        <div class="listen-live-item">
+          <div class="listen-live-image">
+            <img src="./images/image-1.jpg" alt="">
+          </div>
+          <div class="listen-live-text">
+            <h4>Heading</h4>
+            <span>Lorem ipsum dolor sit amet consectetur last.</span>
+          </div>
+        </div>
+      
       </div>
     </section>
+
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script>
+    $('.slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 5,
+      // change color of prev button
+      infinite: true,
+      arrows: true,
+      prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/arrow-left.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='./images/arrow-right.png''>",
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+});
+
+    </script>
 </body>
 </html>

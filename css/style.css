@@ -326,12 +326,16 @@ main{
 
 /*-----Listen Live-----*/
 .listen-live-container{
-  padding: .8rem;
+  padding: 2rem;
+  overflow-x: hidden;
 }
 .listen-live-items-wrapper{
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+.listen-live-item{
+  padding: 1rem;
 }
 .listen-live-image{
   width: 100%;
