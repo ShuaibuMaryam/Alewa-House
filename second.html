@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
+    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
@@ -438,28 +443,55 @@
         </div>
       
       </div>
+      <div class="slider-blinder"></div>
+      <div class="slide-btn-home" id="mobile-slide">
+        <div class="slide-btn-con" id="mobile-slide-con">
+          <button class="sc-c-paddle__button sc-o-button gs-u-p-alt sc-c-paddle--disabled prev"  tabindex="-1">
+            <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="sc-c-icon--chevron-left sc-c-icon gs-u-display-block" aria-hidden="true" focusable="false">
+              <path d="M10.4 14.3L26.5 31h-6.4L5.5 16 20.1 1h6.4L10.4 17.7v-3.4z" fill="#fff"></path>
+            </svg>
+          </button>
+          <button class="sc-c-paddle__button sc-o-button gs-u-p-alt next" tabindex="-1">
+            <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="sc-c-icon--chevron-right primary sc-c-icon gs-u-display-block" aria-hidden="true" focusable="false">
+              <path d="M21.6 14.3L5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7v-3.4z" fill="#fff"></path>
+            </svg>
+          
+      
+          </button>
+    
+        </div>
+        
+      </div>
     </section>
+
+
+
+
+
+
 
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
     <script>
     $('.slider').slick({
-      centerMode: true,
+      
       centerPadding: '60px',
-      slidesToShow: 5,
+      slidesToShow: 6,
+      infinite: false,
+      speed: 900,
     
       // change color of prev button
-      infinite: true,
+      
       arrows: true,
-      prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/arrow-left.png'>",
-      nextArrow:"<img class='a-right control-c next slick-next' src='./images/arrow-right.png''>",
+      prevArrow:$('.prev'),
+      nextArrow:$('.next'),
       responsive: [
         {
           breakpoint: 768,
           settings: {
             arrows: true,
-            centerMode: true,
+            
             centerPadding: '40px',
             slidesToShow: 3
           }
@@ -468,7 +500,7 @@
           breakpoint: 480,
           settings: {
             arrows: true,
-            centerMode: true,
+            
             centerPadding: '40px',
             slidesToShow: 1
           }
