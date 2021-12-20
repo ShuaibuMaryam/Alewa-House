@@ -53,29 +53,30 @@
     }
 
 
-    /* SLider ipad */
-    #mobile-slide{
+    /* button slider */
+    .slide-btn-home{
         position: absolute;
-        top: 180%;
+        top: 50%;
         width: 100%;
-        padding: .5rem;
+        left: 0;
+        /* padding: 1rem; */
     }
-    #mobile-slide-con{
+    
+    .slide-btn-con{
         display: flex;
         justify-content: space-between;
-      }
-
-      .sc-c-paddle__button{
+    }
+    .sc-c-paddle__button{
         border: 0;
         background-color: rgba(58,60,62,0.5);
-  
+    
         padding: 12px;
         color: #fff;
         cursor: pointer;
     }
-      .sc-c-paddle__button:hover{
-          background-color: #ff7b22;
-      }
+    .sc-c-paddle__button:hover{
+        background-color: #ff7b22;
+    }
 
 
     
@@ -154,17 +155,23 @@
       }
 
       .slider-blinder{
-          width: 10%;
-          height: 40%;
-          background-color: rgba(255,255,255,.76);
-          position: absolute;
-          right: 0;
-          top: 219%;
-          /* top: 0;
-          left: 0; */
-          /* display: none; */
+            width: 10%;
+            height: 100%;
+            background-color: rgba(255,255,255,.76);
+            position: absolute;
+            right: 0;
+            top: 0;
       }
+
       .slide-btn-home{
+          
+          position: absolute;
+          width: min-content;
+          right: 6.7%;
+          
+          left: 86.7%;
+      }
+      /* .slide-btn-home{
         position: absolute;
         top: 232%;
         padding: 1rem;
@@ -198,9 +205,9 @@
     /* .slide-btn-home:hover{
             background-color: rgba(58,60,62,0.4);
         } */
-      .primary{
+      /* .primary{
         color: #fff;
 
-      }
+      }  */
 
 }
