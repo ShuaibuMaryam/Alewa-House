@@ -356,3 +356,34 @@ main{
 .listen-live-text > span{
   font-size: .85rem;
 }
+
+/* Mobile view query */
+@media screen and (max-width: 400px) {
+  #mobile-slide{
+    position: absolute;
+    top: 310%;
+    width: 100%;
+    padding: .5rem;
+  }
+  #mobile-slide-con{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sc-c-paddle__button{
+    border: 0;
+    background-color: rgba(58,60,62,0.7);
+  
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .sc-c-paddle__button:hover{
+      background-color: #ff7b22;
+  }
+}
+
+
+
+
+
+
